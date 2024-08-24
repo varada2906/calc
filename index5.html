@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<script src="javascript5.js"></script>
+<body>
+    <style>
+         body{
+            background-color: black;
+         }
+         #screen{
+            border-width: 5px;
+            margin-left: 10px;
+            width:85%;
+            height:41px;
+            margin-top:13px;
+            border-color: yellow;
+            border-radius: 8px;
+            font-size: xx-large;
+            font-family: sans-serif;
+            pointer-events: none;
+         }
+         #mainbody{
+            margin-left:40%;
+            margin-top: 2px;
+            background: linear-gradient(#4874ac ,#0ed0e7);
+            width:250px;
+            height:390px;
+            border:soild 6px;
+            border-color: yellow;
+            border-radius: 10px;
+         }
+         .btn{
+            width:200px;
+            height:300px;
+            margin-left: 1px;
+         }
+         button{
+            width:37px;
+            height:45px;
+            margin-top:16px;
+            background:linear-gradient(#48ac90,#0ee7b1);
+            margin-left:10px;
+            border:solid rgba(25, 79, 25, 0.39);
+            border-radius:34px;
+            font-size:16px;
+            font-weight: 600;
+            font-family: sans-serif;
+         }
+         button:hover{
+            cursor: pointer;
+            background: linear-gradient(#096b51 ,#0c1174);
+         }
+
+    </style>
+    
+</body>
+<div id="mainbody">
+     <div>
+        <input type="text" id ="screen">
+     </div>
+     <div class="btn">
+        <div class="row">
+            <button onclick="clrdisp()">C</button>
+        </div>
+        <div class="row">
+            <button onclick="clk(7)">7</button>
+            <button onclick="clk(8)">8</button>
+            <button onclick="clk(9)">9</button>
+            <button onclick="clk('/')">/</button>
+        </div>
+        <div class="row">
+            <button onclick="clk(4)">4</button>
+            <button onclick="clk(5)">5</button>
+            <button onclick="clk(6)">6</button>
+            <button onclick="clk('_')">_</button>
+        </div>
+        <div class="row">
+            <button onclick="clk(1)">1</button>
+            <button onclick="clk(2)">2</button>
+            <button onclick="clk(3)">3</button>
+            <button onclick="clk('*')">X</button>
+        </div>
+        <div class="row">
+            <button onclick="clk(0)">0</button>
+            <button onclick="clk('-')">-</button>
+            <button onclick="eql('=')">=</button>
+            <button onclick="clk('+')">+</button>
+        </div>
+     </div>
+</div>
+</html>
